@@ -18,7 +18,7 @@ Apollo|配置中心
 Sleuth + Skywalking|全链路监控
 Open Feign| 服务端负载均衡
 
-### 各组件简述 ###
+### 中间件简述 ###
 - Consul <br/>
 替代Eureka作为服务注册发现，与Eureka不同，无需编写Server端，安装配置（默认端口8500）之后，启动Consul（我理解是注册中心服务端），然后在Consul客户端启动程序加入注解@EnableDiscoveryClient，即将服务发布了。具体参数在yml中修改。
 

@@ -10,6 +10,7 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>cloud-csl-admin</module>
+    <module>cloud-gateway-client</module>
   </modules>
 
   <name>cloud-master</name>
