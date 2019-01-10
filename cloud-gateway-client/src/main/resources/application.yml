@@ -5,8 +5,8 @@ spring:
     gateway:
       routes:
       - id: neo_route
-        uri: http://www.itmind.net
+        uri: http://www.baidu.com
         predicates:
         - Path=/spring-cloud
 
-# 当访问地址 http://localhost:8011/spring-cloud时会自动转发到地址：http://www.itmind.net/spring-cloud
+# 当访问地址 http://localhost:8011/spring-cloud时会自动转发到地址：http://www.baidu.com
