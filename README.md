@@ -8,6 +8,8 @@
 工程|端口|描述
 ---|:--:|:---
 cloud-2|N/A|父节点
+cloud-csl-provider|8081|Consul注册中心
+cloud-csl-admin|8082|Consul客户端
 
 ## 技术中间件 ##
 中间件|描述
@@ -29,6 +31,8 @@ Redis Jedis|缓存
 MongoDB|NoSql数据库
 OpenResty|给予Nginx与Lua的高性能Web平台，用于直接通过Lua使用Redis
 Lua|调用Redis时的编程语言
+
+## 启动顺序 ##
 
 ## 功能地址 ##
 序号|地址|描述
