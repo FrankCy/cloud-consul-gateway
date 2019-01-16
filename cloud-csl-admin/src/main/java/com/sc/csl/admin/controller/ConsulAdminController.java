@@ -4,7 +4,6 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -42,18 +41,5 @@ public class ConsulAdminController {
         String serviceStr = services.toString();
         logger.info(serviceStr);
         return serviceStr;
-    }
-
-    /**
-     * @description：健康检查
-     * @version 1.0
-     * @author: Yang.Chang
-     * @email: cy880708@163.com
-     * @date: 2019/1/16 下午2:53
-     * @mofified By:
-     */
-    @GetMapping("/actuator/health")
-    public String health(){
-        return "SUCCESS";
     }
 }

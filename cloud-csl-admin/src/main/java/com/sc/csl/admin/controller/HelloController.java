@@ -41,4 +41,17 @@ public class HelloController {
         return returnString;
     }
 
+    /**
+     * @description：健康检查
+     * @version 1.0
+     * @author: Yang.Chang
+     * @email: cy880708@163.com
+     * @date: 2019/1/16 下午2:53
+     * @mofified By:
+     */
+    @GetMapping("/actuator/health")
+    public String health(){
+        return "SUCCESS";
+    }
+
 }
