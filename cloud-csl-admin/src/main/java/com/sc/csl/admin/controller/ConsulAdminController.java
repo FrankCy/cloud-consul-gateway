@@ -1,10 +1,10 @@
 package com.sc.csl.admin.controller;
 
-import com.sc.csl.admin.services.ConsulService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -26,9 +26,6 @@ public class ConsulAdminController {
     @Autowired
     private DiscoveryClient discoveryClient;
 
-    @Autowired
-    private ConsulService consulService;
-
     private static final Log logger = LogFactory.getLog(ConsulAdminController.class);
 
     /**
@@ -47,23 +44,16 @@ public class ConsulAdminController {
         return serviceStr;
     }
 
-
     /**
-     * @description：查询自定义服务
+     * @description：健康检查
      * @version 1.0
      * @author: Yang.Chang
      * @email: cy880708@163.com
-     * @date: 2019/1/8 下午5:11
+     * @date: 2019/1/16 下午2:53
      * @mofified By:
      */
-    @RequestMapping("/getServiceInfo")
-    public String getServiceInfo() {
-        String info = consulService.getString();
-        logger.info(info);
-        return info;
+    @GetMapping("/actuator/health")
+    public String health(){
+        return "SUCCESS";
     }
-
-
-
-
 }

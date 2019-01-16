@@ -11,6 +11,7 @@
   <modules>
     <module>cloud-csl-admin</module>
     <module>cloud-gateway-client</module>
+    <module>cloud-csl-provider</module>
   </modules>
 
   <name>cloud-master</name>

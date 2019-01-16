@@ -14,10 +14,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @mofified By:
  */
 @SpringBootApplication
-public class GatewayAdminApplication {
+public class GatewayClientApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GatewayAdminApplication.class, args);
+        SpringApplication.run(GatewayClientApplication.class, args);
     }
 
 }

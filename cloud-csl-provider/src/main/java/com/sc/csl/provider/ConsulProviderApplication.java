@@ -1,25 +1,24 @@
-package com.sc.csl.admin;
+package com.sc.csl.provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @version 1.0
  * @description：
  * @author: Yang.Chang
  * @project: cloud-master
- * @package: com.sc.csl.admin、
+ * @package: com.sc.csl.provider、
  * @email: cy880708@163.com
- * @date: 2019/1/8 下午3:12
+ * @date: 2019/1/16 下午2:45
  * @mofified By:
  */
 @SpringBootApplication
-@EnableFeignClients
-public class ConsulAdminApplication {
+public class ConsulProviderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConsulAdminApplication.class, args);
+        SpringApplication.run(ConsulProviderApplication.class, args);
     }
-
+    
 }
+

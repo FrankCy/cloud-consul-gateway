@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-cloud-consul-admin
+    name: consul-admin
   cloud:
     consul:
       host: 127.0.0.1
@@ -27,7 +27,7 @@ spring:
 
 
 server:
-  port: 8083
+  port: 8082
   session-timeout: 10
   tomcat:
     max-threads: 0
