@@ -19,9 +19,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface HelloService {
 
     /**
-     * 接收信息并返回一句话
-     * @param name
-     * @return
+     * @description：接收信息并返回一句话
+     * @version 1.0
+     * @author: Yang.Chang
+     * @email: cy880708@163.com
+     * @date: 2019/1/16 下午3:50
+     * @mofified By:
      */
     @RequestMapping(value = "/sayHello", method = RequestMethod.GET)
     String sayHello(@RequestParam("name") String name);

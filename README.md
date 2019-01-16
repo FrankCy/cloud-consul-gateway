@@ -10,6 +10,7 @@
 cloud-2|N/A|父节点
 cloud-csl-provider|8081|Consul注册中心
 cloud-csl-admin|8082|Consul客户端
+cloud-csl-config|8083|Consul配置
 
 ## 技术中间件 ##
 中间件|描述

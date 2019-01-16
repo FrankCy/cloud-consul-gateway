@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.RestController;
  * @mofified By:
  */
 @RestController
-public class ConfigController {
+public class ConsulConfigController {
 
-    private static final Log logger = LogFactory.getLog(ConfigController.class);
+    private static final Log logger = LogFactory.getLog(ConsulConfigController.class);
 
     /**
      * 读取远程配置
