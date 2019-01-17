@@ -29,10 +29,25 @@ public class HelloController {
      * @email: cy880708@163.com
      * @date: 2019/1/16 下午3:02
      * @mofified By:
-     */
+
     @GetMapping("/actuator/health")
-    public String health() {
+    public String actuatorHealth() {
         logger.info("健康检查");
+        return "SUCCESS";
+    }
+     */
+
+    /**
+     * @description：自定义健康检查，默认的请求地址是/actuator/health
+     * @version 1.0
+     * @author: Yang.Chang
+     * @email: cy880708@163.com
+     * @date: 2019/1/17 下午12:58
+     * @mofified By:
+     */
+    @GetMapping("/health")
+    public String health() {
+        logger.info("自定义健康检查");
         return "SUCCESS";
     }
 

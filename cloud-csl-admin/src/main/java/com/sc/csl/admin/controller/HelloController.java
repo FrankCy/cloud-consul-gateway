@@ -51,6 +51,7 @@ public class HelloController {
      */
     @GetMapping("/actuator/health")
     public String health(){
+        logger.info("consul客户端自动检测");
         return "SUCCESS";
     }
 

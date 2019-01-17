@@ -10,3 +10,16 @@ spring:
       host: 127.0.0.1
       # consul端口
       port: 8500
+      discovery:
+        #优先使用IP配置
+        prefer-agent-address: true
+        #假设部署在docker中，指定了宿主机IP
+        ip-address: 127.0.0.1
+        #假设部署在docker中，指定了宿主机端口
+        port: 8081
+        #设置健康检测间隔为20s
+        health-check-interval: 20s
+        #设置健康检测接口为'/health'（自定义健康检测接口）
+        health-check-path: /health
+        #指定服务标签，用逗号间隔
+        tags: tag1,tag2
