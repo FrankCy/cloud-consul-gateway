@@ -1,12 +1,15 @@
 server:
+  # 修改端口，实际发布时端口也要不一样
   port: 8082
 
 spring:
+  # 还叫consul-provider，实际发布时也是如此，服务提供者名字相同，这样会向consul注册2个相同服务
   application:
     name: consul-provider
   cloud:
     consul:
       host: 127.0.0.1
       port: 8500
+      # tag改为tag2，代表是另外一个tag
       discovery:
         tags: tag2

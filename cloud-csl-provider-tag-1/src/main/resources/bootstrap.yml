@@ -2,11 +2,13 @@ server:
   port: 8081
 
 spring:
+  # 定义应用名称为consul-provider，多个provider的名称要相同
   application:
     name: consul-provider
   cloud:
     consul:
       host: 127.0.0.1
       port: 8500
+      # 使用discovery，指定tag是tag1，ribbon通过tag名称做服务发现
       discovery:
         tags: tag1

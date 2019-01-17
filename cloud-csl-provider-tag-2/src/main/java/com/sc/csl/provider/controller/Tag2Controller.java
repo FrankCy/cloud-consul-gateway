@@ -45,6 +45,7 @@ public class Tag2Controller {
     @GetMapping("/sayHello")
     public String sayHello(String name){
         logger.info("sayHello被请求了");
+        //只修改了这个输出语句，告诉请求方是tag2
         return "hello," + name + ", 我是Tag2";
     }
 }

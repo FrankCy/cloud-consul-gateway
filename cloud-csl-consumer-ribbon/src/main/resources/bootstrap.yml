@@ -10,6 +10,10 @@ spring:
       port: 8500
       discovery:
         # 注意：server-list-query-tags是一个map
-        server-list-query-tags:
-          # 在调用consul-provider服务时，使用tag1,tag2对应的实例
-          consul-provider: tag1
+#        server-list-query-tags:
+#           在调用consul-provider服务时，使用tag1,tag2对应的实例
+#          consul-provider: tag1,tag2
+        # 通过名称来访问consul中多个相同应用名称的provider
+        service-name: consul-provider
+        # 这里要设置false，否则会把自己注册到consul中，并提供服务，轮询时会找自己
+        register: false
