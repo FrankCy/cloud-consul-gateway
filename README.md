@@ -5,12 +5,18 @@
 第二代微服务解决方案
 
 ## 工程介绍 ##
-工程|端口|描述
----|:--:|:---
-cloud-2|N/A|父节点
-cloud-csl-provider|8081|Consul注册中心
-cloud-csl-admin|8082|Consul客户端
-cloud-csl-config|8083|Consul配置
+分类|工程|端口|描述
+---|:--|:--:|:---
+核心 |cloud-2|N/A|父节点
+基础 | | |
+N/A | cloud-csl-provider|8081|Consul注册中心
+N/A |cloud-csl-admin|8082|Consul客户端
+N/A |cloud-csl-config|8083|Consul配置
+Consul集群 | | |
+N/A |cloud-csl-provider-tag1|8081|tag1服务提供者
+N/A |cloud-csl-provider-tag2|8082|tag2服务提供者
+N/A |cloud-csl-consumer-ribbon|8083|两种方式服务发现
+N/A |cloud-consumer-discovery-client|8084|自定义客户端服务发现
 
 ## 技术中间件 ##
 中间件|描述
