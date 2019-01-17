@@ -13,6 +13,10 @@
     <module>cloud-gateway-client</module>
     <module>cloud-csl-provider</module>
     <module>cloud-csl-config</module>
+    <module>cloud-csl-provider-tag-1</module>
+    <module>cloud-csl-provider-tag-2</module>
+    <module>cloud-csl-consumer-ribbon</module>
+    <module>cloud-consumer-discovery-client</module>
   </modules>
 
   <name>cloud-master</name>

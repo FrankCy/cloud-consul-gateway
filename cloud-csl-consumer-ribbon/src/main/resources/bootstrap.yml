@@ -1,0 +1,15 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: consul-consumer-ribbon
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      discovery:
+        # 注意：server-list-query-tags是一个map
+        server-list-query-tags:
+          # 在调用consul-provider服务时，使用tag1,tag2对应的实例
+          consul-provider: tag1

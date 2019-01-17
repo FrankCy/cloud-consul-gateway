@@ -1,0 +1,10 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: consul-consumer-discovery-client
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
