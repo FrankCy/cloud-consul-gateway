@@ -1,11 +1,14 @@
 spring:
   application:
+    # 此处consul中config会读
     name: consul-config-customize
   cloud:
     consul:
       config:
-        # Consul中Value配置格式为yaml
-        format: yaml
+        # enabled 设置是否启用config，默认是true
+        enabled: true
+        # Consul中Value配置格式为yaml,支持类型（ YAML、PROPERTIES、KEY-VALUE、FILES）
+        format: YAML
         # Consul配置文件目录为configuration，默认是config
         prefix: configuration
         # 去该目录下查找缺省配置，默认为application
@@ -14,3 +17,6 @@ spring:
         profile-separator: ':'
         # 如果指定配置格式为yaml或者properties，则需要该值作为key，默认为data
         data-key: data
+        watch:
+          wait-time: 1
+          delay: 500

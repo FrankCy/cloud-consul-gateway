@@ -31,13 +31,20 @@ public class ConsulConfigCustomizeController {
     private String name;
 
     /**
+     * 读取远程配置
+     */
+    @Value("${foo.bar.des}")
+    private String des;
+
+    /**
      * 将配置展示在页面
      * @return
      */
     @GetMapping("/getName")
     public String getName() {
         logger.info("配置是：" + name);
-        return name;
+        logger.info("配置是：" + des);
+        return name + " ---- " + des;
     }
 
 }

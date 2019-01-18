@@ -3,5 +3,5 @@ server:
 
 spring:
   profiles:
-    # 指定启动时的profiles
+    # 指定启动时的profiles是test，这样服务启动时，就会向consul去找test的配置
     active: test
