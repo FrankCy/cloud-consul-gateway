@@ -17,6 +17,8 @@
 | |cloud-csl-provider-tag2|8082|tag2服务提供者
 | |cloud-csl-consumer-ribbon|8083|两种方式服务发现
 | |cloud-consumer-discovery-client|8084|自定义客户端服务发现
+|Config profils配置 | | |
+| |cloud-csl-config-customize|8082 / 8083 <br/> ```取决application.yml中的active```|profils配置
 
 ## 技术中间件 ##
 中间件|描述
