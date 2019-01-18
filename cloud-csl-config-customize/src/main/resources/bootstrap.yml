@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: consul-config-customize
+  cloud:
+    consul:
+      config:
+        # Consul中Value配置格式为yaml
+        format: yaml
+        # Consul配置文件目录为configuration，默认是config
+        prefix: configuration
+        # 去该目录下查找缺省配置，默认为application
+        default-context: app
+        # profiles配置分隔符，默认为','
+        profile-separator: ':'
+        # 如果指定配置格式为yaml或者properties，则需要该值作为key，默认为data
+        data-key: data

@@ -1,0 +1,7 @@
+server:
+  port: 8081
+
+spring:
+  profiles:
+    # 指定启动时的profiles
+    active: test

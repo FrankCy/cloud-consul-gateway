@@ -17,6 +17,7 @@
     <module>cloud-csl-provider-tag-2</module>
     <module>cloud-csl-consumer-ribbon</module>
     <module>cloud-consumer-discovery-client</module>
+    <module>cloud-csl-config-customize</module>
   </modules>
 
   <name>cloud-master</name>
