@@ -19,6 +19,10 @@
 | |cloud-csl-consumer-discovery-client|8084|自定义客户端服务发现
 |Config profils配置 | | |
 | |cloud-csl-config-customize|8082 / 8083 <br/> ```取决application.yml中的active```|profils配置
+|Discovery Client  自定义 | | |
+| |cloud-csl-override-consumer| | ```未测试```
+| |cloud-csl-override-provider-tag-1| | ```未测试```
+| |cloud-csl-override-provider-tag-2| | ```未测试```
 
 ## 技术中间件 ##
 中间件|描述
