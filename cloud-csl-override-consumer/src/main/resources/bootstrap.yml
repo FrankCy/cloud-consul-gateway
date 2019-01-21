@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: consul-override-consumer
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      discovery:
+        # 注意 server-list-query-tags 是一个 map
+        server-list-query-tags:
+          # 在调用consul-provider 服务时, 使用 tag1 对应的实例
+          consul-provider: tag1
