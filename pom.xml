@@ -16,9 +16,9 @@
     <module>cloud-csl-provider-tag-1</module>
     <module>cloud-csl-provider-tag-2</module>
     <module>cloud-csl-consumer-ribbon</module>
-    <module>cloud-consumer-discovery-client</module>
+    <module>cloud-csl-consumer-discovery-client</module>
     <module>cloud-csl-config-customize</module>
-      <module>cloud-csl-override-provider-tag-1</module>
+    <module>cloud-csl-override-provider-tag-1</module>
     <module>cloud-csl-override-provider-tag-2</module>
     <module>cloud-csl-override-consumer</module>
   </modules>
