@@ -19,6 +19,11 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class CloudGatewayBasic1Application {
 
+    /**
+     * 通过JAVA流式API自定义RouteLocatorBuilder方式定义Spring Cloud Gateway路由
+     * @param builder
+     * @return
+     */
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
