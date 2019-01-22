@@ -21,8 +21,12 @@
 | |cloud-csl-config-customize|8082 / 8083 <br/> ```取决application.yml中的active```|profils配置
 |Discovery Client  自定义 | | |
 | |cloud-csl-override-consumer| | ```未测试```
-| |cloud-csl-override-provider-tag-1| | ```未测试```
-| |cloud-csl-override-provider-tag-2| | ```未测试```
+| |cloud-csl-override-provider-tag-1| 8081 | ```未测试```
+| |cloud-csl-override-provider-tag-2| 8082 | ```未测试```
+|Gateway 练习 | | |
+| |cloud-gty-basic-application| 8080 | ```通过启动程序Java代码实现网关路由```
+| |cloud-gty-basic-yml| 8080 | ```通过yml配置文件实现网关路由（常用）```
+
 
 ## 技术中间件 ##
 中间件|描述
