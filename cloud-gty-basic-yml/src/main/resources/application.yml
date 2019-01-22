@@ -11,6 +11,12 @@ spring:
         uri: http://baidu.com:80/
         predicates:
         - Path=/baidu
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    enabled: false
 
 # Spring Cloud Gateway 日志配置
 logging:

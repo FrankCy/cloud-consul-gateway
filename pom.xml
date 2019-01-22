@@ -10,7 +10,6 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>cloud-csl-admin</module>
-    <module>cloud-gateway-client</module>
     <module>cloud-csl-provider</module>
     <module>cloud-csl-config</module>
     <module>cloud-csl-provider-tag-1</module>
