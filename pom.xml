@@ -21,6 +21,8 @@
     <module>cloud-csl-override-provider-tag-1</module>
     <module>cloud-csl-override-provider-tag-2</module>
     <module>cloud-csl-override-consumer</module>
+    <module>cloud-gty-basic-application</module>
+    <module>cloud-gty-basic-yml</module>
   </modules>
 
   <name>cloud-master</name>

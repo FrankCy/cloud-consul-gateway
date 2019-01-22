@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-cloud-gateway
+  cloud:
+    gateway:
+      #当访问http://localhost:8080/baidu,直接转发到https://www.baidu.com/
+      routes:
+      - id: baidu_route
+        uri: http://baidu.com:80/
+        predicates:
+        - Path=/baidu
+
+# Spring Cloud Gateway 日志配置
+logging:
+  level:
+    org.springframework.cloud.gateway: TRACE
+    org.springframework.http.server.reactive: DEBUG
+    org.springframework.web.reactive: DEBUG
+    reactor.ipc.netty: DEBUG
