@@ -31,6 +31,7 @@
     <module>cloud-gty-host-route</module>
     <module>cloud-gty-method-route</module>
     <module>cloud-gty-query-route</module>
+    <module>cloud-gty-remote-addr-route</module>
   </modules>
 
   <name>cloud-master</name>
