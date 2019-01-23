@@ -28,6 +28,7 @@
     <module>cloud-gty-cookie-route</module>
     <module>cloud-gty-route-server</module>
     <module>cloud-gty-header-route</module>
+    <module>cloud-gty-host-route</module>
   </modules>
 
   <name>cloud-master</name>
