@@ -22,6 +22,9 @@
     <module>cloud-csl-override-consumer</module>
     <module>cloud-gty-basic-application</module>
     <module>cloud-gty-basic-yml</module>
+    <module>cloud-gty-after-route</module>
+    <module>cloud-gty-before-route</module>
+    <module>cloud-gty-between-route</module>
   </modules>
 
   <name>cloud-master</name>
