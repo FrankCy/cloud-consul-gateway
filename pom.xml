@@ -30,6 +30,7 @@
     <module>cloud-gty-header-route</module>
     <module>cloud-gty-host-route</module>
     <module>cloud-gty-method-route</module>
+    <module>cloud-gty-query-route</module>
   </modules>
 
   <name>cloud-master</name>
