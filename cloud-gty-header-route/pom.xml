@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-gty-cookie-route</artifactId>
+    <artifactId>cloud-gty-header-route</artifactId>
 
     <dependencies>
         <dependency>

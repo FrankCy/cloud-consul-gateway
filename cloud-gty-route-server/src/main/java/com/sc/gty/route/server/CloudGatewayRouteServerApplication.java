@@ -14,8 +14,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @mofified By:
  */
 @SpringBootApplication
-public class CloudGatewyRouteServerApplication {
+public class CloudGatewayRouteServerApplication {
     public static void main(String[] args) {
-        SpringApplication.run(CloudGatewyRouteServerApplication.class, args);
+        SpringApplication.run(CloudGatewayRouteServerApplication.class, args);
     }
 }

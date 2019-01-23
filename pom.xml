@@ -27,6 +27,7 @@
     <module>cloud-gty-between-route</module>
     <module>cloud-gty-cookie-route</module>
     <module>cloud-gty-route-server</module>
+    <module>cloud-gty-header-route</module>
   </modules>
 
   <name>cloud-master</name>
