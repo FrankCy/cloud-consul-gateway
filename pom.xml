@@ -33,6 +33,7 @@
     <module>cloud-gty-query-route</module>
     <module>cloud-gty-remote-addr-route</module>
     <module>cloud-gty-eureka-case</module>
+    <module>cloud-gty-gateway-global-filter</module>
   </modules>
 
   <name>cloud-master</name>
