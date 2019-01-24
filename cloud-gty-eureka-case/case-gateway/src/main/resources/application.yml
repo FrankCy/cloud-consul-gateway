@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: case-gateway-server
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          # 是否与服务发现组件进行结合，通过serviceId转发到具体的服务实例。默认为false，为true代表开启基于服务发现的路由规则。
+          enabled: true
+          lower-case-service-id: true
+
+server:
+  #网关服务监听 9000 端口
+  port: 9000
+eureka:
+  client:
+    service-url:
+      #指定注册中心的地址，以便使用服务发现功能
+      defaultZone: http://localhost:8761/eureka/
+
+logging:
+  level:
+    #调整相关包的 log 级别，以便排查问题
+    org.springframework.cloud.gateway: debug
