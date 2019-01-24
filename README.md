@@ -33,9 +33,8 @@
 :---|:---
 Gateway|API 网关
 Consul|注册中心
-Apollo|配置中心
+gRPC|Google研发高效RPC
 Sleuth + Skywalking|全链路监控
-Open Feign| 服务端负载均衡
 
 ### 中间件简述 ###
 - Consul <br/>
