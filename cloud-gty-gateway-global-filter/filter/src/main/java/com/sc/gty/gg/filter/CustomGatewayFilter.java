@@ -18,9 +18,17 @@ import reactor.core.publisher.Mono;
  */
 public class CustomGatewayFilter implements GatewayFilter, Ordered {
 
-    private static final Log log = LogFactory.getLog(GatewayFilter.class);
+    private static final Log logger = LogFactory.getLog(CustomGatewayFilter.class);
+
+
     private static final String COUNT_Start_TIME = "countStartTime";
 
+    /**
+     * 对路由转发的耗时进行统计
+     * @param exchange
+     * @param chain
+     * @return
+     */
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         exchange.getAttributes().put(COUNT_Start_TIME, System.currentTimeMillis());
@@ -29,7 +37,7 @@ public class CustomGatewayFilter implements GatewayFilter, Ordered {
                     Long startTime = exchange.getAttribute(COUNT_Start_TIME);
                     Long endTime=(System.currentTimeMillis() - startTime);
                     if (startTime != null) {
-                        log.info(exchange.getRequest().getURI().getRawPath() + ": " + endTime + "ms");
+                        logger.info(exchange.getRequest().getURI().getRawPath() + ": " + endTime + "ms");
                     }
                 })
         );

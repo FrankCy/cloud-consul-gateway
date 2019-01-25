@@ -19,6 +19,12 @@ import reactor.core.publisher.Mono;
 @Component
 public class AuthSignatureFilter implements GlobalFilter, Ordered {
 
+    /**
+     * 拦截请求，获取authToken，并校验
+     * @param exchange
+     * @param chain
+     * @return
+     */
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         String token = exchange.getRequest().getQueryParams().getFirst("authToken");

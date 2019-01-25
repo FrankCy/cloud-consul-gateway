@@ -25,7 +25,7 @@ public class GatewayServerApplication {
         return builder.routes()
                 .route(r -> r.path("/test")
                         .filters(f -> f.filter(new CustomGatewayFilter()))
-                        .uri("http://localhost:8001/customFilter?name=xujin")
+                        .uri("http://localhost:8001/customFilter?name=frank")
                         .order(0)
                         .id("custom_filter")
                 )
