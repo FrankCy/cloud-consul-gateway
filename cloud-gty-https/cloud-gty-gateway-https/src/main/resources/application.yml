@@ -9,14 +9,18 @@ spring:
           enabled: true
 server:
   ssl:
+    # 在生成证书时键入的别名
     key-alias: certificatekey
     enabled: true
+    # 证书密码，我设置的相同的
     key-password: 12979613
+    # 证书，与application.yml统计目录下
     key-store: classpath:shfqkeystore.jks
     key-store-type: JKS
     key-store-provider: SUN
+    # 证书存储密码，我设置的相同的
     key-store-password: 12979613
-  port: 8085
+  port: 8080
 
 eureka:
   client:

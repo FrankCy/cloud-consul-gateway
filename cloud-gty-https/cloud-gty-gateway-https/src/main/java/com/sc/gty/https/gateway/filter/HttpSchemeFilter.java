@@ -20,7 +20,6 @@ public class HttpSchemeFilter implements GlobalFilter, Ordered {
 
     private static final int HTTPS_TO_HTTP_FILTER_ORDER = 10101;
 
-
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         Object uriObj = exchange.getAttributes().get(GATEWAY_REQUEST_URL_ATTR);
