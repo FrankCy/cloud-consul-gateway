@@ -34,6 +34,7 @@
     <module>cloud-gty-remote-addr-route</module>
     <module>cloud-gty-eureka-case</module>
     <module>cloud-gty-gateway-global-filter</module>
+    <module>cloud-gty-wcmp</module>
   </modules>
 
   <name>cloud-master</name>
