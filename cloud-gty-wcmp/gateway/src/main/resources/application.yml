@@ -7,16 +7,18 @@ spring:
     gateway:
       routes:
       - id: service1_v1
+        # 这里可以配置为其它要路由的地址
         uri: http://localhost:8081/v1
         predicates:
         - Path=/test
-        # 设置权重
+        # 设置权重 为95%
         - Weight=service1, 95
       - id: service1_v2
+        # 这里可以配置为其它要路由的地址
         uri: http://localhost:8081/v2
         predicates:
         - Path=/test
-        # 设置权重
+        # 设置权重 为5%
         - Weight=service1, 5
 
 logging:
