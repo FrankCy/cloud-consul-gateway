@@ -35,6 +35,7 @@
     <module>cloud-gty-eureka-case</module>
     <module>cloud-gty-gateway-global-filter</module>
     <module>cloud-gty-wcmp</module>
+    <module>cloud-gty-https</module>
   </modules>
 
   <name>cloud-master</name>
