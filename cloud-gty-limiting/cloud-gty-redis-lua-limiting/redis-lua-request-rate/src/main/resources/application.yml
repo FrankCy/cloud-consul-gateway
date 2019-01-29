@@ -1,0 +1,32 @@
+server.port: 8081
+
+spring:
+  application:
+    name: redis-lua-limiting
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+  cloud:
+    gateway:
+      routes:
+      - id: rateLimit_route
+        uri: http://localhost:8000/hello/rateLimit
+        order: 0
+        predicates:
+        - Path=/test/rateLimit
+        filters:
+        #filter名称必须是RequestRateLimiter
+        - name: RequestRateLimiter
+          args:
+            #使用SpEL按名称引用bean
+            key-resolver: "#{@remoteAddrKeyResolver}"
+            #允许用户每秒处理多少个请求
+            redis-rate-limiter.replenishRate: 1
+            #令牌桶的容量，允许在一秒钟内完成的最大请求数
+            redis-rate-limiter.burstCapacity: 5
+
+logging:
+  level:
+    #org.springframework.cloud.gateway: debug
+    cn.springcloud.book.filter: debug
