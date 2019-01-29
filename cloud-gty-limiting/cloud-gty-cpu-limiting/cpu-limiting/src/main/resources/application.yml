@@ -1,0 +1,20 @@
+server.port: 8082
+spring:
+  application:
+    name: cpu-limiting
+
+
+logging:
+  level:
+    #org.springframework.cloud.gateway: debug
+    cn.springcloud.book.filter: debug
+
+
+#开启端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  security:
+    enabled: false
