@@ -36,6 +36,8 @@
     <module>cloud-gty-gateway-global-filter</module>
     <module>cloud-gty-wcmp</module>
     <module>cloud-gty-https</module>
+    <module>cloud-gty-limiting</module>
+    <module>cloud-gty-limiting</module>
   </modules>
 
   <name>cloud-master</name>
