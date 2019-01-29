@@ -12,7 +12,7 @@
     <artifactId>cloud-gty-custom-filter-limiting</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>gateway</module>
+        <module>custom-filter</module>
     </modules>
 
 
