@@ -22,6 +22,11 @@ import java.time.Duration;
 @SpringBootApplication
 public class CustomLimitingGatewayApplication {
 
+    /**
+     * 通过流式API配置路由规则，当访问/test/rateLimit时，自动转发到http://localhost:8000/hello/rateLimit
+     * @param builder
+     * @return
+     */
     @Bean
     public RouteLocator customerRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
