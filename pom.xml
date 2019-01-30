@@ -38,6 +38,7 @@
     <module>cloud-gty-https</module>
     <module>cloud-gty-limiting</module>
     <module>cloud-gty-limiting</module>
+    <module>cloud-gty-dynamic-routing</module>
   </modules>
 
   <name>cloud-master</name>
